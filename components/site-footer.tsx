@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Copyright } from "lucide-react"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
