@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "prepare": "husky install",
     "migrations:generate": "drizzle-kit generate:mysql",
     "migrations:push": "node -r esbuild-register lib/db/migrate.ts",
     "migrations:drop": "drizzle-kit drop --config=drizzle.config.ts"
@@ -67,7 +68,14 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
     "drizzle-kit": "^0.18.1",
-    "esbuild-register": "^3.4.2"
+    "esbuild-register": "^3.4.2",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-tailwindcss": "^3.12.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "pretty-quick": "^3.1.3"
   }
 }
