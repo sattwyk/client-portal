@@ -1,5 +1,6 @@
 import "./globals.css"
 
+import { Metadata } from "next"
 import { Inter } from "next/font/google"
 
 import { siteConfig } from "@/config/site"
@@ -40,8 +41,8 @@ export const metadata = {
   ],
   authors: [
     {
-      name: "sattwyk",
-      url: "https://sattwyk.com",
+      name: "Cliently Team",
+      url: "https://cliently.xyz",
     },
   ],
   creator: "sattwyk",
@@ -56,6 +57,7 @@ export const metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     siteName: siteConfig.name,
+    images: [`${siteConfig.url}/og.jpg`],
   },
   twitter: {
     card: "summary_large_image",
@@ -70,7 +72,7 @@ export const metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
-}
+} satisfies Metadata
 
 export default function RootLayout({
   children,
